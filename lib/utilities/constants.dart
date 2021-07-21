@@ -11,10 +11,30 @@ const kMessageTextStyle = TextStyle(
 );
 
 const kButtonTextStyle = TextStyle(
+  color: Colors.white,
   fontSize: 30.0,
   fontFamily: 'Spartan MB',
 );
 
 const kConditionTextStyle = TextStyle(
   fontSize: 100.0,
+);
+
+const kTextFieldInputDecoration = InputDecoration(
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(
+      Radius.circular(10),
+    ),
+    borderSide: BorderSide.none,
+  ),
+  filled: true,
+  fillColor: Colors.white,
+  hintText: 'Enter City Name',
+  hintStyle: TextStyle(
+    color: Colors.grey,
+  ),
+  icon: Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
 );
